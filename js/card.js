@@ -1,6 +1,6 @@
 const myCard = (id, image, name, origin) => {
     let card = document.createElement("div")
-    card.classList.add(..."card bg-dark text-white col-12 col-md-4".split(" "))
+    card.classList.add(..."card bg-dark text-white col-12 col-md-3 m-3".split(" "))
     let img = document.createElement("img")
     img.classList.add(..."card-img-top img-container".split(" "))
     img.setAttribute("src", image);
@@ -12,8 +12,8 @@ const myCard = (id, image, name, origin) => {
     origen.textContent = origin
     let button = document.createElement("a")
     button.textContent ="Ver Mas"
-    button.setAttribute("href",
-    `./details.html?id=${id}`)
+    button.setAttribute("href", `./details.html?id=${id}`)
+    button.setAttribute("target", `_blank`)
     cBody.append(title, origen)
     card.append(img, cBody, button)
     return card
