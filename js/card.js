@@ -12,6 +12,7 @@ const myCard = (id, image, name, origin) => {
     origen.textContent = origin
     let button = document.createElement("a")
     button.textContent ="Ver Mas"
+    button.classList.add(..."btn btn-primary mb-2".split(" "))
     button.setAttribute("href", `./details.html?id=${id}`)
     button.setAttribute("target", `_blank`)
     cBody.append(title, origen)
