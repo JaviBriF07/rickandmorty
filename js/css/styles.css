@@ -1,4 +1,8 @@
 body {
   background: rgb(0, 0, 0);
   background: linear-gradient(180deg, rgb(0, 0, 0) 15%, rgb(45, 106, 126) 52%, rgb(0, 0, 0) 86%);
+}
+
+#hero {
+  width: 21vw;
 }/*# sourceMappingURL=styles.css.map */
